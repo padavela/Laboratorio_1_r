@@ -92,6 +92,7 @@ students_projection <- function(result_students){
 }
 students_projection
 
+
 students_projection <- function(n){
   matriz = result_students(nrow=n, ncol=n)
   for (i in 1:n){
@@ -114,9 +115,27 @@ students_projection
 
 7. Data Frames y lapply
 
+7.1
 
+```{r}
+index_education <- function(grade){
+  (1+(grade/100))/2
+}
 
+index_education(100)
+```
 
+7.2
+
+```{r}
+all_students_grade <- students_grades_df[1:5,1:4]
+all_students_grade
+```
+7.3
+
+```{r}
+lapply(all_students_grade, index_education)
+```
 
 8. Math utilities
 
