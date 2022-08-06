@@ -83,35 +83,24 @@ subset(students_grades_df, subset = Accounting > 80 & Legal_age ==TRUE)
 6.1)
 
 ```{r}
-students_projection <- function(result_students){
-  for (i in 1:nrow(result_students)){
-    for (j in 1:ncol(result_students)){
-      print(result_students[i,j])  
+
+students_projection <- function(){
+  for(row in 1:nrow(result_students)) {
+    for(col in 1:ncol(result_students)) {
+        print(result_students[row, col])
     }
   }
 }
-students_projection
-
-
-students_projection <- function(n){
-  matriz = result_students(nrow=n, ncol=n)
-  for (i in 1:n){
-    for (j in 1:n){
-      print(matriz[i,j])  
-    }
-  }
-}
-
 students_projection
 
 ```
-
 
 6.2)
 
 ```{r}
 
 ```
+
 
 7. Data Frames y lapply
 
